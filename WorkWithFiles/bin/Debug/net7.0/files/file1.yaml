@@ -1,0 +1,20 @@
+- id: 1
+  name: Энджи
+  breed: Ретривер
+  age: 3
+  description: Мечтает стать поводырем
+- id: 2
+  name: Патрик
+  breed: Мопс
+  age: 6
+  description: Спит и ворчит
+- id: 3
+  name: Белла
+  breed: Бордер-колли
+  age: 2
+  description: Любит пасти овец и мого бегать
+- id: 4
+  name: Терра
+  breed: Пудель
+  age: 1
+  description: Любит играть в мячик
