@@ -5,6 +5,18 @@
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="WorkWithFiles.Views.WriteToFile"
 			 xmlns:vm="using:WorkWithFiles.ViewModels"
-			  x:DataType="vm:MainWindowViewModel">
-	Welcome to Avalonia!
+			 xmlns:v="using:WorkWithFiles.Views"
+			 x:DataType="vm:MainWindowViewModel">
+	
+	<StackPanel>
+		<TextBlock Text="Введите имя файла:" Margin="10"/>
+		<TextBox Text="{Binding WriteToFileVM.FileName}" Margin="10"/>
+		<TextBlock Text="Выберите расширение:" Margin="10"/>
+		<ComboBox ItemsSource="{Binding WriteToFileVM.TypesFiles}" Width="200"
+				  SelectedItem="{Binding WriteToFileVM.TypeFile}"
+				  SelectedIndex="1" Margin="10"/>
+		<Button Command="{Binding WriteToFileVM.BtnFileWrite}" Content="Записать"  Margin="10"/>
+		<TextBlock Text="{Binding WriteToFileVM.Massage}" Margin="10"/>
+	</StackPanel>
+	
 </UserControl>

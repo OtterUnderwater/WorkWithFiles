@@ -3,9 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="WorkWithFiles.Views.ReadFromFile"
+             x:Class="WorkWithFiles.Views.Menu"
 			 xmlns:vm="using:WorkWithFiles.ViewModels"
 			 xmlns:v="using:WorkWithFiles.Views"
-			 x:DataType="vm:MainWindowViewModel">
-Чтение из файла
+			  x:DataType="vm:MainWindowViewModel">
+
+	<StackPanel>
+		<Button Command="{Binding BtnWrite}" Content="Запись в файл"/>
+		<Button Command="{Binding BtnRead}" Content="Чтение из файла"/>
+	</StackPanel>
 </UserControl>

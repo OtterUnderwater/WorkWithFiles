@@ -4,10 +4,10 @@ using Avalonia.Markup.Xaml;
 
 namespace WorkWithFiles.Views;
 
-public partial class WriteToFile : UserControl
+public partial class Menu : UserControl
 {
-    public WriteToFile()
+    public Menu()
     {
-		InitializeComponent();
+        InitializeComponent();
     }
 }

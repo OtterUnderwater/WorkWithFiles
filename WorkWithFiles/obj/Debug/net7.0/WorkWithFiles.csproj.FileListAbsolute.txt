@@ -136,3 +136,4 @@ D:\otter\avalonia\WorkWithFiles\WorkWithFiles\obj\Debug\net7.0\WorkWithFiles.gen
 D:\otter\avalonia\WorkWithFiles\WorkWithFiles\obj\Debug\net7.0\ref\WorkWithFiles.dll
 D:\otter\avalonia\WorkWithFiles\WorkWithFiles\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\otter\avalonia\WorkWithFiles\WorkWithFiles\bin\Debug\net7.0\YamlDotNet.dll
+D:\otter\avalonia\WorkWithFiles\WorkWithFiles\bin\Debug\net7.0\CsvHelper.dll
