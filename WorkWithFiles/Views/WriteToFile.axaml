@@ -7,16 +7,38 @@
 			 xmlns:vm="using:WorkWithFiles.ViewModels"
 			 xmlns:v="using:WorkWithFiles.Views"
 			 x:DataType="vm:MainWindowViewModel">
-	
-	<StackPanel>
-		<TextBlock Text="Введите имя файла:" Margin="10"/>
-		<TextBox Text="{Binding WriteToFileVM.FileName}" Margin="10"/>
-		<TextBlock Text="Выберите расширение:" Margin="10"/>
-		<ComboBox ItemsSource="{Binding WriteToFileVM.TypesFiles}" Width="200"
-				  SelectedItem="{Binding WriteToFileVM.TypeFile}"
-				  SelectedIndex="1" Margin="10"/>
-		<Button Command="{Binding WriteToFileVM.BtnFileWrite}" Content="Записать"  Margin="10"/>
-		<TextBlock Text="{Binding WriteToFileVM.Massage}" Margin="10"/>
+
+	<StackPanel Margin="30, 20">
+		<Button Command="{Binding BtnMenu}"
+				Content="Назад"
+				FontSize="15"
+				Background="Green"
+				Margin="0, 10"/>
+		<TextBlock Text="Введите имя файла и выберите расширение:"
+				   FontSize="18"/>
+		<Grid ColumnDefinitions="200,100">
+			<TextBox Grid.Column="0"
+					 Text="{Binding WriteToFileVM.FileName}"
+					 Margin="0, 10, 5, 10"/>
+			<ComboBox Grid.Column="1"
+					  ItemsSource="{Binding WriteToFileVM.TypesFiles}"
+					  Width="100"
+					  SelectedItem="{Binding WriteToFileVM.SelectedType}"
+					  Margin="0, 10"/>
+		</Grid>
+		<TextBlock Text="Выберите модель:"
+				   FontSize="18"/>
+		<ComboBox ItemsSource="{Binding WriteToFileVM.AllModels}"
+				  Width="300"
+				  SelectedItem="{Binding WriteToFileVM.SelectedModel}"
+				  Margin="0, 10"/>
+		<Button Command="{Binding WriteToFileVM.BtnFileWrite}"
+				Content="Записать"
+				FontSize="15"
+				Background="Green"/>
+		<TextBlock Text="{Binding WriteToFileVM.Massage}"
+				   Foreground="{Binding WriteToFileVM.ColorMessage}"
+				   Margin="10"
+				   FontSize="15"/>
 	</StackPanel>
-	
 </UserControl>

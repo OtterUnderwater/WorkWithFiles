@@ -21,6 +21,11 @@ namespace WorkWithFiles.ViewModels
 		ReadFromFileViewModel readFromFileVM = new ReadFromFileViewModel();
 		public WriteToFileViewModel WriteToFileVM { get => writeToFileVM; set => writeToFileVM = value; }
 		public ReadFromFileViewModel ReadFromFileVM { get => readFromFileVM; set => readFromFileVM = value; }
+		
+		public void BtnMenu()
+		{
+			SwichUC = new WorkWithFiles.Views.Menu();
+		}
 
 		public void BtnWrite()
 		{

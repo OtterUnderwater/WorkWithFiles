@@ -8,8 +8,16 @@
 			 xmlns:v="using:WorkWithFiles.Views"
 			  x:DataType="vm:MainWindowViewModel">
 
-	<StackPanel>
-		<Button Command="{Binding BtnWrite}" Content="Запись в файл"/>
-		<Button Command="{Binding BtnRead}" Content="Чтение из файла"/>
-	</StackPanel>
+	<Grid ColumnDefinitions="200,200" RowDefinitions="100" Margin="30, 20">
+		<Button Grid.Column="0" Command="{Binding BtnWrite}"
+				Content="Запись в файл"
+				FontSize="15"
+				Background="Green"
+				Margin="0, 10"/>
+		<Button Grid.Column="1" Command="{Binding BtnRead}"
+				Content="Чтение из файла"
+				FontSize="15"
+				Background="Green"
+				Margin="0, 0"/>
+	</Grid>
 </UserControl>
