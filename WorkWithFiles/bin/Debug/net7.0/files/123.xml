@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfDogs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Dogs>
+<ArrayOfRickAndMortys xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RickAndMortys>
     <Id>1</Id>
-    <Name>Энджи</Name>
-    <Breed>Ретривер</Breed>
-    <Age>3</Age>
-    <Description>Мечтает стать поводырем</Description>
-  </Dogs>
-  <Dogs>
+    <Name>Большой Морти</Name>
+    <Status>Мертв</Status>
+    <Species>Люди</Species>
+  </RickAndMortys>
+  <RickAndMortys>
     <Id>2</Id>
-    <Name>Патрик</Name>
-    <Breed>Мопс</Breed>
-    <Age>6</Age>
-    <Description>Спит и ворчит</Description>
-  </Dogs>
-  <Dogs>
+    <Name>Токсичный Морти</Name>
+    <Status>Жив</Status>
+    <Species>Токсины</Species>
+  </RickAndMortys>
+  <RickAndMortys>
     <Id>3</Id>
-    <Name>Белла</Name>
-    <Breed>Бордер-колли</Breed>
-    <Age>2</Age>
-    <Description>Любит пасти овец и мого бегать</Description>
-  </Dogs>
-  <Dogs>
-    <Id>4</Id>
-    <Name>Терра</Name>
-    <Breed>Пудель</Breed>
-    <Age>1</Age>
-    <Description>Любит играть в мячик</Description>
-  </Dogs>
-</ArrayOfDogs>
+    <Name>Злой Морти</Name>
+    <Status>Жив</Status>
+    <Species>Люди</Species>
+  </RickAndMortys>
+</ArrayOfRickAndMortys>

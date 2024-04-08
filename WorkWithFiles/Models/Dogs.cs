@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WorkWithFiles.Models
 {
 	public class Dogs
-	{
+    {
 		public int Id { get; set; }
 		public string? Name { get; set; }
 		public string? Breed { get; set; }

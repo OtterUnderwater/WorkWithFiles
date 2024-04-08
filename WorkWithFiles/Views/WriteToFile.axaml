@@ -12,7 +12,7 @@
 		<Button Command="{Binding BtnMenu}"
 				Content="Назад"
 				FontSize="15"
-				Background="Green"
+				Background="Coral"
 				Margin="0, 10"/>
 		<TextBlock Text="Введите имя файла и выберите расширение:"
 				   FontSize="18"/>
@@ -35,7 +35,7 @@
 		<Button Command="{Binding WriteToFileVM.BtnFileWrite}"
 				Content="Записать"
 				FontSize="15"
-				Background="Green"/>
+				Background="Coral"/>
 		<TextBlock Text="{Binding WriteToFileVM.Massage}"
 				   Foreground="{Binding WriteToFileVM.ColorMessage}"
 				   Margin="10"

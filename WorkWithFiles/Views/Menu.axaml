@@ -12,12 +12,12 @@
 		<Button Grid.Column="0" Command="{Binding BtnWrite}"
 				Content="Запись в файл"
 				FontSize="15"
-				Background="Green"
+				Background="Coral"
 				Margin="0, 10"/>
 		<Button Grid.Column="1" Command="{Binding BtnRead}"
 				Content="Чтение из файла"
 				FontSize="15"
-				Background="Green"
+				Background="Coral"
 				Margin="0, 0"/>
 	</Grid>
 </UserControl>

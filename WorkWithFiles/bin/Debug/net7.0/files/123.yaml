@@ -1,20 +1,12 @@
 - id: 1
-  name: Энджи
-  breed: Ретривер
-  age: 3
-  description: Мечтает стать поводырем
+  name: Большой Морти
+  status: Мертв
+  species: Люди
 - id: 2
-  name: Патрик
-  breed: Мопс
-  age: 6
-  description: Спит и ворчит
+  name: Токсичный Морти
+  status: Жив
+  species: Токсины
 - id: 3
-  name: Белла
-  breed: Бордер-колли
-  age: 2
-  description: Любит пасти овец и мого бегать
-- id: 4
-  name: Терра
-  breed: Пудель
-  age: 1
-  description: Любит играть в мячик
+  name: Злой Морти
+  status: Жив
+  species: Люди
