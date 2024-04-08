@@ -31,7 +31,6 @@ namespace WorkWithFiles.ViewModels
 		string selectedType = "";
 		public string SelectedModel { get => selectedModel; set => selectedModel = value; }
 		string selectedModel = "";
-
 		public IBrush ColorMessage { get => colorMessage; set => this.RaiseAndSetIfChanged(ref colorMessage, value); }
 		IBrush colorMessage = Brushes.Red;
 		public string Massage { get => massage; set => this.RaiseAndSetIfChanged(ref massage, value); }

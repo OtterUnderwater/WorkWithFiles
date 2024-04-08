@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\otter\\avalonia\\WorkWithFiles\\",
+  "WorkspaceRootPath": "D:\\otter\\VSProject\\WorkWithFiles\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\avalonia\\workwithfiles\\workwithfiles\\viewmodels\\readfromfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\viewmodels\\readfromfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\vsproject\\workwithfiles\\workwithfiles\\views\\readfromfile.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\views\\readfromfile.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\otter\\avalonia\\WorkWithFiles\\WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\vsproject\\workwithfiles\\workwithfiles\\viewmodels\\readfromfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\viewmodels\\readfromfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +27,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "123.json",
-              "DocumentMoniker": "D:\\otter\\avalonia\\WorkWithFiles\\WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json",
-              "RelativeDocumentMoniker": "WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json",
-              "ToolTip": "D:\\otter\\avalonia\\WorkWithFiles\\WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json",
-              "RelativeToolTip": "WorkWithFiles\\bin\\Debug\\net7.0\\files\\123.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-07T21:01:46.998Z",
+              "Title": "ReadFromFileViewModel.cs",
+              "DocumentMoniker": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
+              "RelativeDocumentMoniker": "WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
+              "ToolTip": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
+              "RelativeToolTip": "WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAiwGgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T15:15:38.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ReadFromFileViewModel.cs",
-              "DocumentMoniker": "D:\\otter\\avalonia\\WorkWithFiles\\WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
-              "RelativeDocumentMoniker": "WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
-              "ToolTip": "D:\\otter\\avalonia\\WorkWithFiles\\WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
-              "RelativeToolTip": "WorkWithFiles\\ViewModels\\ReadFromFileViewModel.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAA2wIkAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T20:24:08.011Z",
+              "Title": "ReadFromFile.axaml",
+              "DocumentMoniker": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ReadFromFile.axaml",
+              "RelativeDocumentMoniker": "WorkWithFiles\\Views\\ReadFromFile.axaml",
+              "ToolTip": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ReadFromFile.axaml",
+              "RelativeToolTip": "WorkWithFiles\\Views\\ReadFromFile.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-08T14:59:45.259Z",
               "EditorCaption": ""
             }
           ]
