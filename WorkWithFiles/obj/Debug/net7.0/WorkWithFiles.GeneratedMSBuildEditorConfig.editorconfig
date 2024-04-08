@@ -23,17 +23,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/Menu.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/ReadFromFile.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
 [D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/ViewListDogs.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/ViewListPerson.axaml]
-build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
-
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/WriteToFile.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

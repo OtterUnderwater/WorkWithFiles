@@ -30,4 +30,10 @@
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\ViewListPerson.axaml" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Styles\" />
+  </ItemGroup>
 </Project>

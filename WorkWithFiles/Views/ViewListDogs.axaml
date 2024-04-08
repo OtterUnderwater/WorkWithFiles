@@ -7,30 +7,63 @@
 			 xmlns:vm="using:WorkWithFiles.ViewModels"
 			 xmlns:v="using:WorkWithFiles.Views"
 			 x:DataType="vm:MainWindowViewModel">
+
 	<StackPanel>
-		<Grid ColumnDefinitions="50,*,*,*,*" Margin="10">
-			<TextBlock Grid.Column="0" Text="Id"/>
-			<TextBlock Grid.Column="1" Text="Имя"/>
-			<TextBlock Grid.Column="2" Text="Порода"/>
-			<TextBlock Grid.Column="3" Text="Возраст"/>
-			<TextBlock Grid.Column="4" Text="Описание"/>
+		<Grid ColumnDefinitions="250,*">
+			<ComboBox
+				ItemsSource="{Binding SelectionDogs}"
+				Width="250"
+				Grid.Column="0"
+				SelectedItem="{Binding SelectedDog}"
+				Margin="10"/>
+			<Button Command="{Binding BtnSortModel}"
+					Content="Сортировать"
+					Width="150"
+					Grid.Column="1"
+					Background="Coral"
+					Margin="10"
+					HorizontalContentAlignment="Center"/>
 		</Grid>
-		<ItemsControl ItemsSource="{Binding ReadFromFileVM.ListDog}">
+		<Grid ColumnDefinitions="250,*">
+			<TextBox Text="{Binding Query}"
+					 Grid.Column="0"
+					 Width="250"
+					 Watermark="Введите кличку для поиска"
+					 Margin="10"/>
+			<Button Command="{Binding BtnFilterModel}"
+					Content="Поиск"
+					Width="150"
+					Grid.Column="1"
+					Background="Coral"
+					Margin="10"
+					HorizontalContentAlignment="Center"/>
+		</Grid>
+		<Border BorderBrush="Coral" BorderThickness="1" Padding="5">
+			<Grid ColumnDefinitions="50,*,*,*,*" Margin="10">
+				<TextBlock Grid.Column="0" Text="№"/>
+				<TextBlock Grid.Column="1" Text="Кличка"/>
+				<TextBlock Grid.Column="2" Text="Порода"/>
+				<TextBlock Grid.Column="3" Text="Возраст"/>
+				<TextBlock Grid.Column="4" Text="Описание"/>
+			</Grid>
+		</Border>
+		<ItemsControl ItemsSource="{Binding ListDog}">
 			<ItemsControl.ItemTemplate>
 				<DataTemplate>
 					<StackPanel>
-						<Grid ColumnDefinitions="50,*,*,*,*" >
-							<TextBlock Grid.Column="0" Text="{Binding Id}"/>
-							<TextBlock Grid.Column="1" Text="{Binding Name}"/>
-							<TextBlock Grid.Column="2" Text="{Binding Breed}"/>
-							<TextBlock Grid.Column="3" Text="{Binding Age}"/>
-							<TextBlock Grid.Column="4" Text="{Binding Description}"/>
-						</Grid>
+						<Border BorderBrush="Coral" BorderThickness="1" Padding="5">
+
+							<Grid ColumnDefinitions="50,*,*,*,*" >
+								<TextBlock Grid.Column="0" Text="{Binding Id}"/>
+								<TextBlock Grid.Column="1" Text="{Binding Name}"/>
+								<TextBlock Grid.Column="2" Text="{Binding Breed}"/>
+								<TextBlock Grid.Column="3" Text="{Binding Age}"/>
+								<TextBlock Grid.Column="4" Text="{Binding Description}"/>
+							</Grid>
+						</Border>
 					</StackPanel>
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>
 	</StackPanel>
-
-	
 </UserControl>

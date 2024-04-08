@@ -11,9 +11,46 @@
         Title="WorkWithFiles"
 		MinWidth="600"
 		MinHeight="400">
-
+	
     <Design.DataContext>
 		<vm:MainWindowViewModel/>
     </Design.DataContext>
-	<UserControl Content="{Binding SwichUC}"/>
+	
+	<StackPanel Margin="30, 20">
+		<TextBlock Text="Введите имя файла и выберите расширение:"
+				   FontSize="18"/>
+		<Grid ColumnDefinitions="220,100">
+			<TextBox Grid.Column="0"
+					 Text="{Binding FileName}"
+					 Margin="0, 10, 5, 10"/>
+			<ComboBox Grid.Column="1"
+					  ItemsSource="{Binding TypesFiles}"
+					  Width="100"
+					  SelectedItem="{Binding SelectedType}"
+					  Margin="0, 10"/>
+		</Grid>
+		<TextBlock Text="Выберите модель:"
+				   FontSize="18"/>
+		<ComboBox ItemsSource="{Binding AllModels}"
+				  Width="320"
+				  SelectedItem="{Binding SelectedModel}"
+				  Margin="0, 10, 0, 0"/>
+		<Grid ColumnDefinitions="150,170" RowDefinitions="60">
+			<Button Grid.Column="0"
+					Command="{Binding BtnWrite}"
+					Content="Записать в файл"
+					FontSize="15"
+					Background="Coral"/>
+			<Button Grid.Column="1"
+					Command="{Binding BtnRead}"
+					Content="Прочитать из файла"
+					FontSize="15"
+					Background="Coral"/>
+		</Grid>
+		<TextBlock Text="{Binding Massage}"
+				   Foreground="{Binding ColorMessage}"
+				   Margin="10"
+				   FontSize="15"/>
+		<UserControl Content="{Binding GetTable}"/>
+	</StackPanel>
 </Window>
