@@ -25,4 +25,9 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="YamlDotNet" Version="15.1.2" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\ViewListPerson.axaml" />
+  </ItemGroup>
 </Project>

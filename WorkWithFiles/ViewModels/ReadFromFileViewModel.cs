@@ -5,8 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
-using Avalonia.Controls;
-using Avalonia.Media;
 using CsvHelper;
 using ReactiveUI;
 using WorkWithFiles.Models;
@@ -14,17 +12,16 @@ using WorkWithFiles.Views;
 using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Serialization;
 using Newtonsoft.Json;
-using System.Net.Http;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using System.Xml;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
-using YamlDotNet.Core;
+using Avalonia.Controls;
+using Avalonia.Controls.Shapes;
 
 namespace WorkWithFiles.ViewModels
 {
 	public class ReadFromFileViewModel : ReactiveObject
 	{
+		UserControl? getTable;
+		public UserControl? GetTable { get => getTable; set => this.RaiseAndSetIfChanged(ref getTable, value); }
+
 		string directory = @"files\";
 		public string FileName { get => fileName; set => fileName = value; }
 		string fileName = "";
@@ -48,6 +45,7 @@ namespace WorkWithFiles.ViewModels
 		/// </summary>
 		public void BtnFileRead()
 		{
+			bool answer;
 			Massage = "";
 			if (FileName != "" && SelectedType != "")
 			{
@@ -55,15 +53,29 @@ namespace WorkWithFiles.ViewModels
 				{
 					if (SelectedModel != "")
 					{
-							string path = directory + FileName + SelectedType;
+						string path = directory + FileName + SelectedType;
+						FileInfo file = new FileInfo(path);
+						if(file.Exists)
+						{
 							if (SelectedModel == AllModels[0])
 							{
-								DeserializationFromFile<Dogs>(path);
+								answer = DeserializationFromFile<Dogs>(path);
+								GetTable = answer ? new ViewListDogs() : null;
 							}
 							else
 							{
-								DeserializationFromFile<RickAndMortys>(path);
+								answer = DeserializationFromFile<RickAndMortys>(path);
+								GetTable = answer ? new ViewListPerson() : null;
 							}
+							if (!answer)
+							{
+								Massage = "Возможно выбрана неверная модель.\nПопробуйте выбрать другую!";
+							}
+						}
+						else
+						{
+							Massage = "Данного файла не существует. Сначала создайте файл!";
+						}
 					}
 					else
 					{
@@ -97,7 +109,7 @@ namespace WorkWithFiles.ViewModels
 		/// <typeparam name="T"></typeparam>
 		/// <param name="path"></param>
 		/// <param name="data"></param>
-		public void DeserializationFromFile<T>(string path)
+		public bool DeserializationFromFile<T>(string path)
 		{
 			Massage = "";
 			ListDog.Clear();
@@ -114,8 +126,9 @@ namespace WorkWithFiles.ViewModels
 			}
 			catch
 			{
-				Massage = "Возможно выбрана неверная модель.\nПопробуйте выбрать другую!";
+				return false;
 			}
+			return true;
 		}
 
 		/// <summary>

@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="WorkWithFiles.Views.ViewListDogs"
+			 xmlns:vm="using:WorkWithFiles.ViewModels"
+			 xmlns:v="using:WorkWithFiles.Views"
+			 x:DataType="vm:MainWindowViewModel">
+	<StackPanel>
+		<Grid ColumnDefinitions="50,*,*,*,*" Margin="10">
+			<TextBlock Grid.Column="0" Text="Id"/>
+			<TextBlock Grid.Column="1" Text="Имя"/>
+			<TextBlock Grid.Column="2" Text="Порода"/>
+			<TextBlock Grid.Column="3" Text="Возраст"/>
+			<TextBlock Grid.Column="4" Text="Описание"/>
+		</Grid>
+		<ItemsControl ItemsSource="{Binding ReadFromFileVM.ListDog}">
+			<ItemsControl.ItemTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<Grid ColumnDefinitions="50,*,*,*,*" >
+							<TextBlock Grid.Column="0" Text="{Binding Id}"/>
+							<TextBlock Grid.Column="1" Text="{Binding Name}"/>
+							<TextBlock Grid.Column="2" Text="{Binding Breed}"/>
+							<TextBlock Grid.Column="3" Text="{Binding Age}"/>
+							<TextBlock Grid.Column="4" Text="{Binding Description}"/>
+						</Grid>
+					</StackPanel>
+				</DataTemplate>
+			</ItemsControl.ItemTemplate>
+		</ItemsControl>
+	</StackPanel>
+
+	
+</UserControl>

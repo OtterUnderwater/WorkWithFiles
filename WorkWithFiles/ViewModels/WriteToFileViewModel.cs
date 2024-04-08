@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
@@ -8,17 +7,10 @@ using YamlDotNet.Serialization.NamingConventions;
 using YamlDotNet.Serialization;
 using System.Text.Json;
 using Avalonia.Media;
-using System.Reflection;
-using Microsoft.VisualBasic.FileIO;
-using Avalonia.Controls;
-using static WorkWithFiles.ViewModels.WriteToFileViewModel;
-using System.ComponentModel;
 using System.Linq;
 using CsvHelper;
 using System.Globalization;
 using System.Text;
-using System.Xml.Linq;
-using Avalonia.Controls.Shapes;
 
 namespace WorkWithFiles.ViewModels
 {
