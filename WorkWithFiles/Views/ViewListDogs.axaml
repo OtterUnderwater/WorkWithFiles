@@ -39,7 +39,7 @@
 					HorizontalContentAlignment="Center"/>
 		</Grid>
 		<Border BorderBrush="Coral" BorderThickness="1" Padding="5">
-			<Grid ColumnDefinitions="50,*,*,*,*" Margin="10">
+			<Grid ColumnDefinitions="1*,3*,3*,2*,6*" Margin="10">
 				<TextBlock Grid.Column="0" Text="№"/>
 				<TextBlock Grid.Column="1" Text="Кличка"/>
 				<TextBlock Grid.Column="2" Text="Порода"/>
@@ -52,8 +52,7 @@
 				<DataTemplate>
 					<StackPanel>
 						<Border BorderBrush="Coral" BorderThickness="1" Padding="5">
-
-							<Grid ColumnDefinitions="50,*,*,*,*" >
+							<Grid ColumnDefinitions="1*,3*,3*,2*,6*">
 								<TextBlock Grid.Column="0" Text="{Binding Id}"/>
 								<TextBlock Grid.Column="1" Text="{Binding Name}"/>
 								<TextBlock Grid.Column="2" Text="{Binding Breed}"/>

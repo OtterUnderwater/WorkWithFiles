@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\otter\\VSProject\\WorkWithFiles\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\vsproject\\workwithfiles\\workwithfiles\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\vsproject\\workwithfiles\\workwithfiles\\views\\viewlistperson.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\views\\viewlistperson.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|d:\\otter\\vsproject\\workwithfiles\\workwithfiles\\views\\viewlistdogs.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{DF3BBBDF-DBB8-46B3-B787-0A5E1B827B4D}|WorkWithFiles\\WorkWithFiles.csproj|solutionrelative:workwithfiles\\views\\viewlistdogs.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,39 +34,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ViewListPerson.axaml",
               "DocumentMoniker": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ViewListPerson.axaml",
               "RelativeDocumentMoniker": "WorkWithFiles\\Views\\ViewListPerson.axaml",
               "ToolTip": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ViewListPerson.axaml",
               "RelativeToolTip": "WorkWithFiles\\Views\\ViewListPerson.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T22:31:04.161Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewListDogs.axaml",
-              "DocumentMoniker": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ViewListDogs.axaml",
-              "RelativeDocumentMoniker": "WorkWithFiles\\Views\\ViewListDogs.axaml",
-              "ToolTip": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\Views\\ViewListDogs.axaml",
-              "RelativeToolTip": "WorkWithFiles\\Views\\ViewListDogs.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-08T22:30:42.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindowViewModel.cs",
-              "DocumentMoniker": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeDocumentMoniker": "WorkWithFiles\\ViewModels\\MainWindowViewModel.cs",
-              "ToolTip": "D:\\otter\\VSProject\\WorkWithFiles\\WorkWithFiles\\ViewModels\\MainWindowViewModel.cs",
-              "RelativeToolTip": "WorkWithFiles\\ViewModels\\MainWindowViewModel.cs",
-              "ViewState": "AQIAAC4BAAAAAAAAAAAswGMBAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T17:24:17.148Z",
+              "WhenOpened": "2024-04-09T17:08:36.179Z",
               "EditorCaption": ""
             }
           ]
