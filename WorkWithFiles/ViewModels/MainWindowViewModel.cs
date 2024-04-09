@@ -412,9 +412,9 @@ namespace WorkWithFiles.ViewModels
 		{
 			BtnRead(); //Обновляем данные модели
 			BtnSortModel(); //Применяем выбранную сортировку
-							//Фильтрация по Name
-			ListDog = ListDog.Cast<Dogs>().Where(p => p.Name.Contains(Query)).ToList();
-			ListPerson = ListPerson.Cast<RickAndMortys>().Where(p => p.Name.Contains(Query)).ToList();
+			//Фильтрация по Name
+			ListDog = ListDog.Cast<Dogs>().Where(p => p.Name.ToLower().Contains(Query.ToLower())).ToList();
+			ListPerson = ListPerson.Cast<RickAndMortys>().Where(p => p.Name.ToLower().Contains(Query.ToLower())).ToList();
 			if (ListPerson.Count == 0 && ListDog.Count == 0)
 			{
 				MassageQuery = "По вашему запросу нет данных!";
