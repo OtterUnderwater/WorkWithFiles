@@ -12,6 +12,13 @@
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <AvaloniaXaml Remove="Styles\**" />
+    <Compile Remove="Styles\**" />
+    <EmbeddedResource Remove="Styles\**" />
+    <None Remove="Styles\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.0.6" />
@@ -34,6 +41,5 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Styles\" />
   </ItemGroup>
 </Project>

@@ -13,18 +13,16 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WorkWithFiles
-build_property.ProjectDir = D:\otter\VSProject\WorkWithFiles\WorkWithFiles\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = \\main\RDP\33П\токареваэо\Desktop\p\mamsh\WorkWithFiles\WorkWithFiles\
 
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/App.axaml]
+[//main/RDP/33П/токареваэо/Desktop/p/mamsh/WorkWithFiles/WorkWithFiles/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/MainWindow.axaml]
+[//main/RDP/33П/токареваэо/Desktop/p/mamsh/WorkWithFiles/WorkWithFiles/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/ViewListDogs.axaml]
+[//main/RDP/33П/токареваэо/Desktop/p/mamsh/WorkWithFiles/WorkWithFiles/Views/ViewListDogs.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[D:/otter/VSProject/WorkWithFiles/WorkWithFiles/Views/ViewListPerson.axaml]
+[//main/RDP/33П/токареваэо/Desktop/p/mamsh/WorkWithFiles/WorkWithFiles/Views/ViewListPerson.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

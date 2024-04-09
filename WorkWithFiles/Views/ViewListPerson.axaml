@@ -49,6 +49,7 @@
 		<ItemsControl ItemsSource="{Binding ListPerson}">
 			<ItemsControl.ItemTemplate>
 				<DataTemplate>
+					<ScrollViewer>
 					<StackPanel>
 						<Border BorderBrush="Coral" BorderThickness="1" Padding="5">
 							<Grid ColumnDefinitions="50,*,*,*" >
@@ -59,8 +60,13 @@
 							</Grid>
 						</Border>
 					</StackPanel>
+					</ScrollViewer>	
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>
+		<TextBlock Text="{Binding MassageQuery}"
+				   Foreground="Red"
+				   Margin="10"
+				   FontSize="15"/>
 	</StackPanel>
 </UserControl>

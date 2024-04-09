@@ -65,5 +65,9 @@
 				</DataTemplate>
 			</ItemsControl.ItemTemplate>
 		</ItemsControl>
+		<TextBlock Text="{Binding MassageQuery}"
+		   Foreground="Red"
+		   Margin="10"
+		   FontSize="15"/>
 	</StackPanel>
 </UserControl>
