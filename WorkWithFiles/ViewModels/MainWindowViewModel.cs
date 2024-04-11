@@ -1,10 +1,7 @@
 ﻿using Avalonia.Controls;
-using Avalonia.Controls.Shapes;
 using Avalonia.Media;
 using CsvHelper;
 using CsvHelper.Configuration;
-using DynamicData.Kernel;
-using Newtonsoft.Json;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
@@ -13,13 +10,11 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Xml.Linq;
 using System.Xml.Serialization;
 using WorkWithFiles.Models;
 using WorkWithFiles.Views;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WorkWithFiles.ViewModels
 {
@@ -312,15 +307,20 @@ namespace WorkWithFiles.ViewModels
 		/// </summary>
 		public void DeserializationFromJson<T>(string path)
 		{
-			List<T> model;
-			using (StreamReader streamReader = new StreamReader(path, Encoding.UTF8))
+			List<T> model = new List<T>();
+			string dataJson = File.ReadAllText(path);
+			//Проверка на количество элементов списка
+			if (dataJson.Contains("["))
 			{
-				using (JsonReader jsonReader = new JsonTextReader(streamReader))
-				{
-					Newtonsoft.Json.JsonSerializer serializer = new Newtonsoft.Json.JsonSerializer();
-					// Десериализуем JSON в список объектов типа T
-					model = serializer.Deserialize<List<T>>(jsonReader);
-				}
+				// Десериализуем JSON в список объектов типа List<T>
+				model = JsonSerializer.Deserialize<List<T>>(dataJson);
+			}
+			else
+			{
+				// Десериализуем JSON в список объектов типа T,
+				// если в файле только один элемент листа
+				T strData = JsonSerializer.Deserialize<T>(dataJson);
+				model.Add(strData);
 			}
 			PrintModel(model);
 		}
